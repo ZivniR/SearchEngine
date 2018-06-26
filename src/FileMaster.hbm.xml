@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="modle.FileMaster" table="FILEMASTER">
+<id name="serial" type="int" column="Serial" >
+<generator class="increment"/>
+</id>
+<property name="url">
+ <column name="URL"/>
+</property>
+<property name="name">
+ <column name="Name"/>
+</property>
+ <property name="description">
+ <column name="Description"/>
+</property>
+<property name="artist">
+ <column name="Artist"/>
+</property>
+ </class>
+</hibernate-mapping>
